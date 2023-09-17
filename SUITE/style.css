@@ -1,0 +1,214 @@
+body {
+  justify-content: center;
+  padding-top: 100px;
+  margin: 0px;;
+  padding: 0px;
+  height: 100vh; 
+  background-color: #e1dbdbf0;
+  align-content: center;
+}
+
+#bouton{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display:flex; 
+  text-align: center;
+  margin:0px ;
+  padding: 0px;
+flex-wrap: wrap;
+flex-direction: column;
+background-color: rgb(100, 100, 100);
+border: 1px solid rgb(0, 0, 0);
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+right: 0;
+z-index: 3;
+box-shadow: 1px 10px 10px rgba(20, 59, 82, 0.53);
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+.hamburger .scroll {
+background-color: #111;
+  
+}
+
+
+
+.hamburger {
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Styles pour les petits écrans (menu mobile) */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+
+
+.titre{
+  background-image: url(tura.png);
+  height: 600px;
+  width:  1508px; 
+  top:   8000px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+
+
+
+
+.titre h1 {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     position: absolute;
+     left: 340px;
+     font-size: 95px;
+     top: 50px;
+     text-align: center;
+     color:white ;
+     display: inline-block;
+     -webkit-text-stroke: 2px black;
+}
+
+.titre h4 {
+  font-family:Fira Sans;
+  font-style: italic;
+  position: absolute;
+     left: 2px;
+     font-size: 25px;
+     top: 600px;
+     text-align: center;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  text-decoration: underline;
+  
+}
+
+
+
+
+.td {
+  display: flex;
+  width: 700px;
+  height: 700px;
+  animation-duration: 37s;
+  animation-name: mesimages;
+  animation-iteration-count: infinite;
+  }
+
+
+  #carousel{
+    position: absolute;
+    left: 150px;
+    top: 750px;
+    width: 1245px;
+    overflow: hidden;
+    border: 2px solid black;
+    box-shadow: 1px 10px 10px rgba(20, 59, 82, 0.53);
+    
+  }
+
+  @keyframes mesimages {
+    0%{
+      transform: translateX(0);
+    }
+
+    33%{
+      transform: translateX(-1245px);
+    }
+
+    66%{
+      transform: translateX(-2490px);
+    }
+  }
+
+  .contact{
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+
+  #logo {
+    display: flex;
+    justify-content:space-evenly;
+    background-color: #333;
+    width:  100%;
+    position: absolute;
+    top: 1700px;
+    border-radius: 10px;
+  }
+  
+   .whatsap img{
+      width: 45px;
+      height:auto ;  
+     
+  
+    }
+  
+   .face img{
+          width: 45px; ;
+          height:auto ;
+    } 
+
+    .snap img{
+      width: 45px;
+    }
+

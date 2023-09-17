@@ -1,0 +1,33 @@
+
+.td {
+    display: flex;
+    width: 1245px;
+    height: 700px;
+    animation-duration: 37s;
+    animation-name: mesimages;
+    animation-iteration-count: infinite;
+
+    }
+
+
+#carousel{
+    position: absolute;
+    top: 445px;
+    overflow: hidden;
+    border: 2px solid black;
+    box-shadow: 1px 10px 10px rgba(20, 59, 82, 0.53);
+  }
+
+  @keyframes mesimages {
+    0%{
+      transform: translateX(0);
+    }
+
+    33%{
+      transform: translateX(-1245px);
+    }
+
+    66%{
+      transform: translateX(-2490px);
+    }
+  }
